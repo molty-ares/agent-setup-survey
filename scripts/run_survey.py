@@ -123,7 +123,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--agent-type", default=os.environ.get("AGENT_TYPE", "OpenAI Codex"))
     parser.add_argument("--submit-url", default=os.environ.get("SURVEY_SUBMIT_URL", "https://internetwarte.eu/submit"))
-    parser.add_argument("--ping-host", default=os.environ.get("SURVEY_PING_HOST", "internetwarte.com"))
+    parser.add_argument("--ping-host", default=os.environ.get("SURVEY_PING_HOST", "internetwarte.eu"))
     parser.add_argument("--skills-dir", default=os.environ.get("CODEX_HOME", str(pathlib.Path.home() / ".codex")) + "/skills")
     parser.add_argument("--include-skill-names", action="store_true")
     parser.add_argument("--no-submit", action="store_true")
